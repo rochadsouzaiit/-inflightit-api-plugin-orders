@@ -49,6 +49,7 @@ export default async function sendOrderEmail(context, input) {
 
   await context.mutations.sendEmail(context, {
     data: dataForEmail,
+    from: `ProximCity <${process.env.PROXIM_COMMUNICATION_EMAIL}>`,
     fromShop,
     templateName,
     language,

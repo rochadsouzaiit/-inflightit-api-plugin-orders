@@ -7,12 +7,12 @@
   "engines": {
     "node": ">=12.14.1"
   },
-  "homepage": "https://github.com/reactioncommerce/api-plugin-orders",
-  "url": "https://github.com/reactioncommerce/api-plugin-orders",
-  "email": "engineering@reactioncommerce.com",
+  "homepage": "https://github.com/rochadsouzaiit/inflightit-reactioncommerce-api-plugin-orders",
+  "url": "https://github.com/rochadsouzaiit/inflightit-reactioncommerce-api-plugin-orders",
+  "email": "info@inflightit.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/reactioncommerce/api-plugin-orders.git"
+    "url": "git+https://github.com/rochadsouzaiit/inflightit-reactioncommerce-api-plugin-orders.git"
   },
   "author": {
     "name": "Reaction Commerce",
@@ -21,7 +21,7 @@
   },
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/reactioncommerce/api-plugin-orders/issues"
+    "url": "https://github.com/rochadsouzaiit/inflightit-reactioncommerce-api-plugin-orders/issues"
   },
   "sideEffects": false,
   "dependencies": {
@@ -30,6 +30,7 @@
     "@reactioncommerce/random": "^1.0.2",
     "@reactioncommerce/reaction-error": "^1.0.1",
     "accounting-js": "^1.1.1",
+    "graphql": "^15.3.0",
     "lodash": "^4.17.15",
     "simpl-schema": "^1.5.9"
   },
@@ -71,11 +72,6 @@
     "extends": [
       "@commitlint/config-conventional"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   },
   "prettier": {
     "arrowParens": "always"
