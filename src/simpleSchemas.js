@@ -432,7 +432,11 @@ export const orderInputSchema = new SimpleSchema({
     type: String,
     optional: true
   },
-  "shopId": String
+  "shopId": String,
+  "note": {
+    type: String,
+    optional: true
+  }
 });
 
 export const paymentInputSchema = new SimpleSchema({
