@@ -35,9 +35,11 @@ const TAX_NUMBER_METAFIELD = {
 };
 const getTaxNumber = (metafields) => {
   if (!metafields) return null;
-  const metafield = metafields.find((mf) =>
-    mf.key === TAX_NUMBER_METAFIELD.key &&
-      mf.namespace === TAX_NUMBER_METAFIELD.namespace);
+  const metafield = metafields.find(
+    (mf) =>
+      (mf.key || "").toUpperCase() === TAX_NUMBER_METAFIELD.key &&
+      (mf.namespace || "").toUpperCase() === TAX_NUMBER_METAFIELD.namespace
+  );
 
   if (!metafield) return null;
   return metafield.value;
